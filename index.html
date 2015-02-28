@@ -5,12 +5,79 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Akward situations guaranteed | PantiePranks.com</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="libs/awesomeplete/awesomplete.css">
     </head>
 <body>
-    <h1>Hello, world!</h1>
+    <header></header>
+    <!-- banner image -->
+
+    <div class="container">
+        <section id="process" class="row">
+            <div class="col-md-4 text-center">
+                <div class="process-circle"></div>
+                <h2>Find victim</h2>
+                <p>This is a sentence of a length that may be deemed acceptable for a minor project description</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="process-circle"></div>
+                <h2>Order anonymously</h2>
+                <p>This is a sentence of a length that may be deemed acceptable for a minor project description</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="process-circle"></div>
+                <h2>Enjoy</h2>
+                <p>This is a sentence of a length that may be deemed acceptable for a minor project description</p>
+            </div>
+        </section>
+    </div>
+    
+    <div class="container">
+        <section id="gallery" class="row">
+            <div class="col-md-6">
+                <img class="img-responsive gallery-img" src="img/gallery-1.png" alt="Gallery image">
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive gallery-img" src="img/gallery-2.jpg" alt="Gallery image">
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive gallery-img" src="img/gallery-3.jpg" alt="Gallery image">
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive gallery-img" src="img/gallery-4.jpg" alt="Gallery image">
+            </div>
+        </section>         
+    </div>
+
+    <div class="container">
+        <section id="payment" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="payment-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="victim-name" placeholder="Name of recipient" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="victim-address" placeholder="Address of recipient" rows="10" autocomplete="off" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control awesomplete" name="victim-country" placeholder="Country of recipient" data-list="United States of America, Afghanistan, Albania, Algeria, Andorra, Angola, Antigua & Deps, Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia, Bosnia Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Burkina, Burma, Burundi, Cambodia, Cameroon, Canada, Cape Verde, Central African Rep, Chad, Chile, People's Republic of China, Republic of China, Colombia, Comoros, Democratic Republic of the Congo, Republic of the Congo, Costa Rica,, Croatia, Cuba, Cyprus, Czech Republic, Danzig, Denmark, Djibouti, Dominica, Dominican Republic, East Timor, Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Ethiopia, Fiji, Finland, France, Gabon, Gaza Strip, The Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Holy Roman Empire, Honduras, Hungary, Iceland, India, Indonesia, Iran, Iraq, Republic of Ireland, Israel, Italy, Ivory Coast, Jamaica, Japan, Jonathanland, Jordan, Kazakhstan, Kenya, Kiribati, North Korea, South Korea, Kosovo, Kuwait, Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Macedonia, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Micronesia, Moldova, Monaco, Mongolia, Montenegro, Morocco, Mount Athos, Mozambique, Namibia, Nauru, Nepal, Newfoundland, Netherlands, New Zealand, Nicaragua, Niger, Nigeria, Norway, Oman, Ottoman Empire, Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal, Prussia, Qatar, Romania, Rome, Russian Federation, Rwanda, St Kitts & Nevis, St Lucia, Saint Vincent & the, Grenadines, Samoa, San Marino, Sao Tome & Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, Spain, Sri Lanka, Sudan, Suriname, Swaziland, Sweden, Switzerland, Syria, Tajikistan, Tanzania, Thailand, Togo, Tonga, Trinidad & Tobago, Tunisia, Turkey, Turkmenistan, Tuvalu, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uruguay, Uzbekistan, Vanuatu, Vatican City, Venezuela, Vietnam, Yemen, Zambia, Zimbabwe" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="victim-msg" placeholder="Message for recipient (optional)" rows="5" autocomplete="off"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-block">Order prank</button>
+                    </div>
+                </form>    
+            </div>            
+        </section>    
+    </div>   
+    
+
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/awesomeplete/awesomplete.min.js"></script>
 </body>
 </html>

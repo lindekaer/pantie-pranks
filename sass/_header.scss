@@ -1,14 +1,12 @@
 /*
 -----------------------------------------------------------------------------------
 |
-| Styles
+| Header styles
 |
 -----------------------------------------------------------------------------------
 */
 
-@import 'variables',
-        'general',
-        'header',
-        'process',
-        'gallery',
-        'payment';
+header {
+  height: 140px;
+  background-color: $primary;
+}
