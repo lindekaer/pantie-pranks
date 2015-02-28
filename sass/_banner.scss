@@ -1,0 +1,22 @@
+/*
+-----------------------------------------------------------------------------------
+|
+| Banner styles
+|
+-----------------------------------------------------------------------------------
+*/
+
+.banner {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+
+  .banner-text {
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    width: 80%;
+  }
+}

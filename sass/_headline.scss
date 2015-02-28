@@ -1,0 +1,30 @@
+/*
+-----------------------------------------------------------------------------------
+|
+| Headline styles
+|
+-----------------------------------------------------------------------------------
+*/
+
+.headline {
+  text-align: center;
+  margin: 30px 0px 20px 0px;
+
+  h1 {
+    font-size: 45px;
+    font-weight: 900;
+  }
+
+  p {
+    color: #b6b6b6;
+    font-size: 28px;
+  }
+
+  .divider {
+    margin: 20px auto 50px auto;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+  }
+
+}
