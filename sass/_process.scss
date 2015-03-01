@@ -6,9 +6,11 @@
 -----------------------------------------------------------------------------------
 */
 
+$circle-diameter: 100px;
+
 .process-circle {
-  width: 100px;
-  height: 100px;
+  width: $circle-diameter;
+  height: $circle-diameter;
   margin: 0px auto;
   border-radius: 50%;
   background-color: $primary;
@@ -21,4 +23,10 @@
 
 .process-title {
   font-weight: 900;
+}
+
+.process-icon {
+  color: #fff;
+  font-size: 50px;
+  line-height: $circle-diameter;
 }

@@ -10,6 +10,11 @@
 
   .form-control {
     font-size: 20px;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(38, 194, 129, 0.6);
+    }
   }
 
   input.form-control {
@@ -30,9 +35,53 @@
     }
   }
 
-  .btn:focus, .form-control:focus {
-    border-color: $primary;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(38, 194, 129, 0.6);
+  // Payment button
+  .btn-effect {
+    overflow: hidden;
+    position: relative;
+    
+    span {
+      display: block;
+      transform: translate(0px, 0px);
+      transition: all 0.250s ease-in-out;
+    }
+
+    &:before {
+      content: '\f219';
+      font-family: 'Fontawesome';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      right: 0px;
+      line-height: 325%;
+      transform: translate(0px, -200px);  
+      transition: all 0.250s ease-in-out;
+    }
+
+    &:after {
+      content: '';
+      height: 200px;
+
+    }
+
   }
+
+  .btn-effect:hover {
+      span {
+        transform: translate(0px, 200px);     
+      }
+
+      &:before {
+        transform: translate(0px, 0px);  
+      }
+  }
+
+    
+    
+
+  
 
 }
