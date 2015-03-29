@@ -15,6 +15,29 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+@font-face {
+  font-family: 'icon';
+  src: url(../fonts/icon.ttf);
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before,
+[class^="icon-"]:after, [class*=" icon-"]:after {   
+  font-family: icon;
+  font-size: 60px;
+  font-style: normal;
+  margin-left: 20px;
+  color: #fff;
+}
+.icon-happy:before {
+  content: "\e000";
+}
+.icon-anonymous:before {
+  content: "\e001";
+}
+.icon-victim:before {
+  content: "\e002";
+}
+
 /*
 -----------------------------------------------------------------------------------
 |

@@ -10,7 +10,7 @@ $(document).on('ready', function() {
 
   var $msg = $('textarea[name="client-msg"]');
   var $progress = $('.progress-bar-success');
-  var MAX = 100;
+  var MAX = 60;
 
   $msg.on('keyup', keystroke);
 
@@ -40,8 +40,6 @@ $(document).on('ready', function() {
   */
 
   $('#payment-form').on('submit', function(e) {
-    var uniqueIdentifier = $('[name="client-name"]');
-    $('[name="client_info]').val(uniqueIdentifier);
     $.ajax({
       method: 'POST',
       url: 'http://77.66.112.12:3000/add',
@@ -68,6 +66,46 @@ $(document).on('ready', function() {
 
   function successHandler() {}
 
-  function errorHandler() {}
+  function errorHandler() {
+    $('#payment-form').append('<div class="alert alert-danger">Something went wrong - please try again.</div>');
+  }
+
+  /*
+  -----------------------------------------------------------------------------------
+  |
+  | Typed.js
+  |
+  -----------------------------------------------------------------------------------
+  */
+
+  $(function(){
+      $("#typed").typed({
+        strings: [
+          "Prank a geeky friend", 
+          "Prank a married dude",
+          "Prank the guy with the anal girlfriend",
+          "Prank an annoying colleague",
+          "Prank your boss",
+          "Prank your roommate",
+          "Prank your neighbour",
+          "Ignite someones relationship",
+          "Release the gagmeister in you"
+        ],
+        typeSpeed: 10
+      });
+  });
+
+  /*
+  -----------------------------------------------------------------------------------
+  |
+  | Terms
+  |
+  -----------------------------------------------------------------------------------
+  */
+
+  $('.terms-trigger').on('click', function(e) {
+    e.preventDefault();
+    $('.terms-text').toggleClass('hidden');
+  });
 
 });

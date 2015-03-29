@@ -13,6 +13,7 @@ $circle-diameter: 100px;
 }
 
 .process-circle {
+  position: relative;
   width: $circle-diameter;
   height: $circle-diameter;
   margin: 0px auto;
@@ -23,6 +24,29 @@ $circle-diameter: 100px;
   &:hover {
     transform: scale(1.3);
   }
+
+  i.icon-victim {
+    position: absolute;
+    left: -4px;
+    top: 2px;
+
+    &:before {
+      font-size: 70px!important;
+    }
+  }
+
+  i.icon-anonymous {
+    position: absolute;
+    left: 2px;
+    top: 5px;
+  }
+
+  i.icon-happy {
+    position: absolute;
+    left: 1px;
+    top: 7px;
+  }
+
 }
 
 .process-title {

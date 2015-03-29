@@ -7,16 +7,24 @@
 */
 
 .banner {
-  height: 80%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eee;
+  background-image: url('../img/bg.png');
+  background-size: cover;
 
   .banner-text {
+    position: relative;
     text-align: center;
     font-weight: 900;
     font-size: 60px;
     width: 80%;
+    background-color: $primary;
+    color: #fff;
+    width: auto;
+    padding: 20px;
+    border-radius: 4px;
   }
 }
