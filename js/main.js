@@ -78,22 +78,34 @@ $(document).on('ready', function() {
   -----------------------------------------------------------------------------------
   */
 
-  $(function(){
-      $("#typed").typed({
-        strings: [
-          "Prank a geeky friend", 
-          "Prank a married dude",
-          "Prank the guy with the anal girlfriend",
-          "Prank an annoying colleague",
-          "Prank your boss",
-          "Prank your roommate",
-          "Prank your neighbour",
-          "Ignite someones relationship",
-          "Release the gagmeister in you"
-        ],
-        typeSpeed: 10
-      });
-  });
+  if ($(window).width() > 721) {
+
+    var typeElement = '<div class="col-md-12">' +
+                        '<div class="typed-wrapper">' +
+                          '<p id="typed"></p>' +
+                        '</div>' +
+                      '</div>' 
+                      
+    
+    $('#process').append(typeElement);
+
+    $("#typed").typed({
+      strings: [
+        "Prank a geeky friend", 
+        "Prank a married dude",
+        "Prank the guy with the anal girlfriend",
+        "Prank an annoying colleague",
+        "Prank your boss",
+        "Prank your roommate",
+        "Prank your neighbour",
+        "Ignite someones relationship",
+        "Release the gagmeister in you"
+      ],
+      typeSpeed: 10
+    });
+  }
+      
+  
 
   /*
   -----------------------------------------------------------------------------------
