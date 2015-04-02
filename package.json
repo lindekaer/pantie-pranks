@@ -30,6 +30,7 @@
     "jshint-stylish": "^1.0.1"
   },
   "dependencies": {
+    "gulp-sftp": "^0.1.4",
     "gulp-twig": "^0.2.1"
   }
 }

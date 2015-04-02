@@ -6,17 +6,19 @@
 -----------------------------------------------------------------------------------
 */
 
-var gulp         = require('gulp'),
-    sass         = require('gulp-sass'),
-    browserSync  = require('browser-sync'),
-    plumber      = require('gulp-plumber'),
-    autoprefixer = require('gulp-autoprefixer'),
-    minifyCSS    = require('gulp-minify-css')
-    jshint       = require('gulp-jshint'),
-    stylish      = require('jshint-stylish'),
-    concat       = require('gulp-concat'),
-    uglify       = require('gulp-uglify'),
-    watch        = require('gulp-watch');
+var gulp         = require('gulp');
+var sass         = require('gulp-sass');
+var browserSync  = require('browser-sync');
+var plumber      = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer');
+var minifyCSS    = require('gulp-minify-css');
+var jshint       = require('gulp-jshint');
+var stylish      = require('jshint-stylish');
+var concat       = require('gulp-concat');
+var uglify       = require('gulp-uglify');
+var watch        = require('gulp-watch');
+var sftp         = require('gulp-sftp');
+
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -60,30 +62,6 @@ gulp.task('default', ['sass', 'browser-sync'], function() {
         gulp.start('reload');
     });
 });
-
-/*
------------------------------------------------------------------------------------
-|
-| Production tasks
-|
------------------------------------------------------------------------------------
-*/
-
-// gulp.task('concat', function() {
-//     return gulp.src('./js/**/*.js')
-//         .pipe(concat('bundle.js'))
-//         .pipe(gulp.dest('./js/')); 
-// });
-
-// gulp.task('uglify', function() {
-//     return gulp.src('./js/bundle.js')
-//         .pipe(uglify({ mangle: false }))
-//         .pipe(gulp.dest('./js/')); 
-// });
-
-// // REMEMVER IMAGEMIN??
-
-// gulp.task('production', ['concat', 'uglify']);
 
 /*
 -----------------------------------------------------------------------------------
